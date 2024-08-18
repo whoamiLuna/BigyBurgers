@@ -1,0 +1,167 @@
+extends ./partials/layout.pug
+
+block content
+    section.main_hero
+        div.main_hero-content
+            h2.hero_content-title SUPER DEAL BURGER
+            a.hero_content-link(href="/menu", title="MENU") ORDER NOW
+            // section hamburguer hero
+    section.main_product-hero
+        div.product_hero-content
+            div.product_hero-img
+                img.hero_img-img(src="IMG/Hamburger-hero.png", alt="Home Product")
+            div.product_hero-info
+                h3.hero_info-title 100% NATURAL FRESH INGREDIENTS 
+                p.hero_info-text Products suitable for all budgets, certified in safety and hygiene, and a unique flavor throughout the world.
+                ul.hero_info-textlist 
+                    li.info_textlist-item
+                        i.fas.fa-circle.item_circle
+                        span.textlist_item-span natural field ingredients
+                    li.info_textlist-item
+                        i.fas.fa-circle.item_circle
+                        span.textlist_item-span meat from controlled farms
+                    li.info_textlist-item
+                        i.fas.fa-circle.item_circle
+                        span.textlist_item-span accesible price
+                a.hero_info-link(href="/menu", title="Order Now") ORDER NOW
+        article.product_hero-promo
+            div.hero_promo-card
+                h4.promo_card-title  SPECIAL OFFERT, 25% LESS IN COMBOS
+                span.promo_card-descount 25%
+                div.promo_card-more
+                    a.card_more-link(href="/menu", title="more promotions") MORE INFORMATION
+            div.hero_promo-card
+                h4.promo_card-title  SPECIAL OFFERT, 100% LESS FOR BIRTHDAYS
+                span.promo_card-descount 100%
+                div.promo_card-more
+                    a.card_more-link(href="/menu", title="more promotions") MORE INFORMATION
+            div.hero_promo-card
+                h4.promo_card-title  SPECIAL OFFERT, 50% LESS PER SOCIAL METTING
+                span.promo_card-descount 50%
+                div.promo_card-more
+                    a.card_more-link(href="/menu", title="more promotions") MORE INFORMATION
+    section.main_menu
+        div.main_menu-containerTitle
+            h2.menu_containerTitle-menu MENU 
+            h3.menu_containerTitle-menuSub WHAT´S NEW
+            p.menu_containerTitle-menuText WIDE VARIETY OF FLAVORS AND SIZES
+        article.main_menu-products
+            // products
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-2.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption="") Simple Cheese 
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $33.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-3.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption="") Jr King
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $50.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-4.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption) Libyan Cheese
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $33.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-5.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption="") Cooked Monster
+                div.product_cards-containerShop 
+                    span.cards_containerShop-price(data-modalsPrice) $43.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-6.png", alt="Product",data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption) Double King
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $33.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-7.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption) Supremacy
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $45.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-8.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption) Big Cheese Bang
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $90.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-9.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption) Big Mac
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $45.00
+                    i.fas.fa-shopping-cart
+            figure.menu_products-card(data-modals="")
+                img.products_card-img(src="../IMG/Hamburger-10.png", alt="Product", data-modalsIMG="")
+                figcaption.products_card-caption(data-modalsCaption) Vegetarian 
+                div.product_cards-containerShop
+                    span.cards_containerShop-price(data-modalsPrice) $20.00
+                    i.fas.fa-shopping-cart
+        //slider
+        article.main_menu-slider
+            div.menu_slider-content
+                h4.slider_content-text BEST SELLERS 
+            div.swiper.swiper_container-menu
+                div.swiper-wrapper.swipper_wrapper-menu
+                    figure.swiper-slide.swiper_slideCard(data-modals)
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/helado-1.png", alt="product",data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/helado-2.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption) Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/helado-3.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/combo-1.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/combo-2.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/combo-3.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/combo-4.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart
+                    figure.swiper-slide.swiper_slideCard(data-modals="")
+                        div.swiper_container-img
+                            img.swiper_slideCard-img(src="/IMG/combo-5.png", alt="product", data-modalsIMG="")
+                        figcaption.swiper_slideCard-caption(data-modalsCaption="") Ice Cream
+                        div.swiper_sliderCard-shop
+                            span.swiper_slideCard-price(data-modalsPrice="") $30.00
+                            i.fas.fa-shopping-cart          
+            div.swiper-pagination
+               

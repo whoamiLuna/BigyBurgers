@@ -1,0 +1,22 @@
+{
+  "name": "hamburger-page",
+  "version": "1.0.0",
+  "description": "Page Hamburge example", 
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon Src/index.js"
+  },
+  "keywords": [],
+  "author": "Luis Luna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3",
+    "swiper": "^11.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}

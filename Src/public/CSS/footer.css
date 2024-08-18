@@ -1,0 +1,124 @@
+/* EN EL FOOTER SE HARA TIPO FIXED POR LO TANTO LA ULTIMA SECCION DE CADA VIEW DEBERA CONTENER LA CLASE MARGIN_BOTTOM-FOOTER */
+
+
+.margin_bottom-footer{
+    position: relative;
+    margin-bottom: 40rem;
+}
+
+
+
+.main_footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_footer);
+    z-index: -99999;
+
+}
+
+.main_footer-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_content-title{
+    font-size: 3.3rem;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer_content-text{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color_text-subtitle);
+}
+
+.content_text-span{
+    color: var(--color_primary);
+}
+
+.footer_content-networks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35rem;
+    height: 6rem;
+    padding: 0;
+}
+
+.content_networks-item{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.networks_link{
+    text-decoration: none;
+}
+
+.networks_link > i {
+    font-size: 2rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 50%;
+    transform: rotate(0);
+    transition: transform ease-in .3s, background-color ease-in .3s;
+}
+
+.networks_link > i:hover{
+    transform: rotate(360deg);
+    background-color: var(--color_white-hover);
+    transition: transform ease-out .6s, background-color ease .3s;
+}
+.icon_facebook{
+    color: var(--facebook_color);
+}
+
+.icon_insta{
+    color: var(--insta_color);
+}
+
+.icon_twiter{
+    color: var(--twiter_color);
+}
+
+.main_footer-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footer_aside-text{
+    font-size: 1.8rem;
+    
+}
+
+.footer_aside-link{
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: var(--color_primary);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 10rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color ease-out .3s;
+}
+
+.footer_aside-link:hover{
+    background-color: var(--color_primary-hover);
+    transition: background-color ease .3s;
+}

@@ -1,0 +1,61 @@
+:root{
+    --color_primary: #ed2222;
+    --color_primary-hover:#aa0b18;
+    --color_secundary: #e1de1b;
+    --color_text-subtitle:#8a8585;
+    --color_white-hover:#5a5757;
+    --color_price: #cd423d;
+    --color_shadow: rgba(0, 0, 0, 0.394);
+    --color_shadow-hover:  rgba(0, 0, 0, 0.6)
+    --facebook_color: #3b5998;
+    --insta_color: #FD1D1D;
+    --twiter_color: #1da1f2;
+    --color_card1: #c68137;
+    --color_card2:#3586bbf2;
+    --color_card3: #423f3ff2;
+    --color_card-menu: #f2f2f2;
+    --color_footer: #333333;
+    font-size: 10px;    
+    font-family: tahoma;
+}
+
+
+/* stilos del bottom UP */
+
+body{
+    width: auto;
+    height: auto;
+}
+.main_btn-Up{
+    position:fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 1.6rem;
+    background-color: var(--color_text-subtitle);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    visibility: visible;
+    transform: scale(1);
+    z-index: 2;
+    cursor: pointer;
+    transition: transform ease-in .4s, visibility ease .3s, background-color ease-in .3s;
+}
+
+.main_btn-Up:hover{
+    background-color: var(--color_white-hover);
+    transition: background-color ease-in-out .3s;
+}
+
+.main_btn-Up > i {
+    font-size: 1.56rem;
+}
+
+.btn_hidden{
+    visibility: hidden;
+    transform: scale(0);
+    transition: transform ease-out .3s, visibility ease-in .2s;
+}

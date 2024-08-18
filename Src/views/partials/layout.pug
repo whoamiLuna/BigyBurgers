@@ -1,0 +1,66 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="autor", content="Luis Luna")
+        meta(name="description", content=description)
+        meta(name="keywords", content=keywords)
+        link(rel="stylesheet", href="CSS/normalize.css")
+        link(rel="stylesheet", href="CSS/swiper-bundle.min.css")
+        link(rel="stylesheet", href="CSS/index.css")
+        link(rel="stylesheet", href="CSS/header.css")
+        link(rel="stylesheet", href="CSS/footer.css")
+        link(rel="stylesheet", href=style)
+        title BIGY BURGERS
+        
+    body 
+        main.main.margin_bottom-footer
+            header.main_header
+                 h1.main_header-title BIGY BURGERS
+                 nav.main_header-nav
+                    ul.header_ul
+                        li.header_ul-list
+                            a.ul_list-item(href="/", title="Home")
+                                i.fas.fa-home.icon_home    
+                                span.list_item-span Home
+                        li.header_ul-list
+                            a.ul_list-item(href="/menu", title="Menu") 
+                                i.fas.fa-utensils.icon_menu           
+                                span.list_item-span Menu
+                        li.header_ul-list
+                            a.ul_list-item(href="/location", title="Location")
+                                i.fas.fa-map-marker-alt.icon_location
+                                span.list_item-span Location 
+                        li.header_ul-list
+                            a.ul_list-item(href="/contact", title="Contact")
+                                i.fas.fa-phone.icon_contact
+                                span.list_item-span Contact
+            block content
+            footer.main_footer
+                div.main_footer-content
+                    h3.footer_content-title BIGY BURGERS FOR EVER
+                    p.footer_content-text follow us on our networks for our
+                        span.content_text-span  !promotions!
+                    nav.footer_content-networks
+                        li.content_networks-item
+                            a.networks_link(href="#", title="Facebook")
+                                i.fab.fa-facebook.icon_facebook
+                        li.content_networks-item
+                            a.networks_link(href="#", title="Instagram")
+                                i.fab.fa-instagram-square.icon_insta
+                        li.content_networks-item
+                            a.networks_link(href="#", title="Twitter")
+                                i.fab.fa-twitter.icon_twitter
+                div.main_footer-aside
+                    p.footer_aside-text Learn more about our other franchises
+                    a.footer_aside-link(href="#") Press Now
+            bottom.main_btn-Up.btn_hidden
+                i.fas.fa-arrow-up
+    script(src="https://kit.fontawesome.com/8695bfc184.js", crossorigin="anonymous")
+    script(src="JS/app.js", type="module")
+    script(src=scriptView, type="module") 
+    script(src="JS/swiper-bundle.min.js")
+
+                    
+                                
